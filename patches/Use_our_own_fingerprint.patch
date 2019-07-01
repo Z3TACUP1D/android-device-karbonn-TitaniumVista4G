@@ -1,0 +1,13 @@
+diff --git a/core/Makefile b/core/Makefile
+index b6979161d..0d0d15c79 100644
+--- a/core/Makefile
++++ b/core/Makefile
+@@ -156,7 +156,7 @@ ifeq (,$(strip $(BUILD_FINGERPRINT)))
+   ifneq ($(TARGET_VENDOR_RELEASE_BUILD_ID),)
+     BF_BUILD_NUMBER := $(TARGET_VENDOR_RELEASE_BUILD_ID)
+   endif
+-  BUILD_FINGERPRINT := $(PRODUCT_BRAND)/$(TARGET_VENDOR_PRODUCT_NAME)/$(TARGET_VENDOR_DEVICE_NAME):$(PLATFORM_VERSION)/$(BUILD_ID)/$(BF_BUILD_NUMBER):$(TARGET_BUILD_VARIANT)/$(BUILD_VERSION_TAGS)
++  BUILD_FINGERPRINT := Karbonn/TitaniumVista4G/TitaniumVista4G:6.0/MRA58K/1493407410:user/release-keys
+ endif
+ ifneq ($(words $(BUILD_FINGERPRINT)),1)
+   $(error BUILD_FINGERPRINT cannot contain spaces: "$(BUILD_FINGERPRINT)")
